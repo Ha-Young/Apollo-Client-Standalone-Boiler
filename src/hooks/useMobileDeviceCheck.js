@@ -1,6 +1,6 @@
 import { useReactiveVar } from "@apollo/client";
 
-import { isMobileVar } from "../store";
+import { isMobileVar } from "../apollo/store";
 import checkMobileDevice from "../utils/checkMobileDevice";
 
 const useMobileDeviceCheck = () => {

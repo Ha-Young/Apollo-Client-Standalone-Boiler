@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { size } from "styled-theme";
 
+import { locationVar } from "../../apollo/store";
 import Loading from "../../components/molecules/Loading";
 import FriendsList from "../../components/organisms/FriendsList";
 import LocationSeason from "../../components/organisms/LocationSeason";
@@ -11,7 +12,6 @@ import PageTemplate from "../../components/templates/PageTemplate";
 import { filterMode as FILTER_MODE } from "../../constants";
 import useInfiniteScroll from "../../hooks/useInfiniteScroll";
 import useViewModeWithSider from "../../hooks/useViewModeWithSider";
-import { locationVar } from "../../store";
 import { ONLOAD_QUERY } from "./query";
 
 const PageContent = styled.div`

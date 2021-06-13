@@ -1,9 +1,9 @@
 import { useReactiveVar } from "@apollo/client";
 import { useEffect } from "react";
 
+import { viewModeVar } from "../apollo/store";
 import theme from "../components/themes";
 import { viewType as viewTypeConstant } from "../constants";
-import { viewModeVar } from "../store";
 import throttleOnRendering from "../utils/throttleOnRendering";
 
 function useViewMode() {

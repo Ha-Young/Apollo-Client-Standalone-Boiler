@@ -1,6 +1,6 @@
 import { useReactiveVar } from "@apollo/client";
 
-import { locationVar } from "../store";
+import { locationVar } from "../apollo/store";
 import getGeolocation from "../utils/getGeolocation";
 
 const useGeolocation = () => {
