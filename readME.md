@@ -1,17 +1,29 @@
-# Apollo-Server-Standalone-Boiler
-Apollo Server Standalone Boiler (Apollo-Server V2)
+# Apollo-Client-Standalone-Boiler
+Apollo Client Standalone Boiler (Apollo-Client V3)
 
-Boilerplate for Apollo Server Standalone without many references and no decent Starter or Boilerplate. Made for beginners like me.
+Boilerplate for Apollo Client Standalone without many references and no decent Starter or Boilerplate. Made for beginners like me.
+
+**Backend** -> [Here](https://github.com/Ha-Young/Apollo-Server-Standalone-Boiler)
+
+
+
+## Demo
+
+Project Using this boiler : [Demo](https://memona.site)
+
+
 
 ## Feature
 
-- GraphQL Structure structure designed by me
-- Authentication using context
-- JWT Token creation and issuance
-- MongoDB integration using DataSource (ODM - Mongoose)
-- Request Rest API using DataSource
+- Atomic Design Structure
+- Authentication using JWT Token
 - Support for file upload using graphql-upload
-  - Use S3 for file upload
+- Responsive App
+- PWA
+  - installing home screen
+  - caching static data
+  - caching fetch data
+  - post request caching for graphQL when post data at offline
 
 ## Require
 
@@ -27,50 +39,19 @@ yarn
 
 > use `yarn` for yarn.lock
 
-1. The environment setting (.env file) must be entered as follows.
+2. The environment setting (.env file) must be entered as follows.
 
 ```
-STAGE=<YOUR_STAGE>
-MONGO_ENDPOINT=<YOUR_MONGODB_DATABASE_URL>
-
-JWT_TOKEN_SECRET=<YOUR_JWT_TOKEN_SECRET>
-JWT_TOKEN_EXPIRES_IN=1d
-
-GOOGLE_CLIENT_ID=<YOUR_GOOGLE_CLIENT_ID>
-
-KAKAO_REST_API_KEY=<YOUR_KAKAO_REST_API_KEY>
-
-AWS_ACCESS_KEY=<YOUR_AWS_ACCESS_KEY>
-AWS_SECRET_ACCESS_KEY=<YOUR_SECRET_ACCESS_KEY>
-AWS_S3_REGION=<YOUR_S3_REGION>
-AWS_S3_IMAGE_BUCKET_NAME=<YOUR_S3_BUCKET_NAME>
+NODE_VERSION=12.22.1
+REACT_APP_GOOGLE_CLIENT_ID=<YOUR_GOOGLE_CLIENT_ID>
+REACT_APP_GRAPHQL_API_URI=<YOUR_GRAPHQL_SERVER_URI>
 ```
 
 > **Guide**
 >
-> - STAGE: Server Stage Settings
+> - REACT_APP_GOOGLE_CLIENT_ID: [Goolge API](https://console.cloud.google.com/apis/credentials?folder=&hl=ko&organizationId=&project=memona)의 OAuth 2.0 Client ID
 >
->   > `development` OR `production`
+> - REACT_APP_GRAPHQL_API_URI: GraphQL Server URI
 >
-> - MONGO_ENDPOINT: MongoDB Cloud Database URL
->
->   - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
->
-> - JWT_TOKEN_SECRET: Key value required to create JWT Token
->
-> - GOOGLE_CLIENT_ID: OAuth 2.0 Client IDs for [Google APIs](https://console.cloud.google.com/apis/credentials?folder=&hl=ko&organizationId=&project=memona)
->
-> - KAKAO_REST_API_KEY: KAKAO REST API KEY
->
->   - [KAKAO Developers](https://developers.kakao.com/)
->
-> - AWS_ACCESS_KEY: AWS ACCESS KEY
->
-> - AWS_SECRET_ACCESS_KEY: AWS SECRET ACCESS KEY
->
-> - AWS_S3_REGION: AWS S3 area code
->
->   > ex) ap-northeast-2
->
-> - AWS_S3_IMAGE_BUCKET_NAME: S3 Bucket name
+>   > ex) [http://localhost:5000](http://localhost:5000/)
 
