@@ -9,8 +9,9 @@ Boilerplate for Apollo Client Standalone without many references and no decent S
 
 ## Demo
 
-Project Using this boiler : [Demo](https://memona.site)
-
+Project Using this boiler : 
+- [Demo](https://memona.site)
+- [Memona](https://github.com/Ha-Young/memona-frontend)
 
 
 ## Feature
